@@ -20,7 +20,7 @@
 //
 //   return view('about', ['name' => $name]);
 // });
-
+//
 Route::get('/', 'PagesController@home');
 Route::get('/about', 'PagesController@about');
 Route::get('/mahasiswa', 'MhsController@index');
@@ -33,5 +33,6 @@ Route::get('/mahasiswa', 'MhsController@index');
 // Route::delete('/students/{student}', 'StudentsController@destroy');
 // Route::get('/students/{student}/edit', 'StudentsController@edit');
 // Route::patch('/students/{student}', 'StudentsController@update');
+
 //simple one route
 Route::resource('students', 'StudentsController');
